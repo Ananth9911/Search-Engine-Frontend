@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed&family=Oswald&display=swap');
+
+* {
+
+    margin:0;
+    padding:0;
+    
+    
+    
+    
+}
+
+
+
+.header {
+    height: 56.5vh;
+    background-image:linear-gradient(to left top ,rgba(131, 155, 127, 0.801),rgba(0, 0, 0, 0.801)),url(art1.jpg);
+    
+    background-size: cover;
+    background-position: top;
+    
+    position: relative;
+
+}
+
+.Va {
+    width: 600px;
+    height: 40px;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    outline: none;
+    margin-left: 350px;
+}
+
+.text-box {
+    position: fixed;
+    left: 40%;
+    top: 20%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80% {
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80% {
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.btn:link,
+.btn:visited {
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 15px 40px;
+      margin-left: 300px;
+      display: inline-block;
+      border-radius: 100px;
+      transition: all .2s;
+      position: relative;
+}
+
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+
+    background-color: #fff;
+    color: #777;
+}
+
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+
+}
+
+.btn-white::after {
+    background-color: #fff;
+    color: #777;
+}
+
+.btn:hover::after {
+    transform: scale(1.5);
+    opacity: 0;
+}
+
+.design {
+    background-image:linear-gradient(to left top ,rgba(173, 179, 172, 0.801),rgba(16, 121, 26, 0.801)),url(art5.jpg);
+}
+
+#d1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    margin-left: 400px;
+    padding-top: 40px;
+    color: rgb(202, 202, 202);
+
+}
+
+#d2 {
+    font-family: 'Oswald', sans-serif;
+font-family: 'Fira Sans Condensed', sans-serif;
+margin-left: 400px;
+
+
+}
